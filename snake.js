@@ -42,12 +42,10 @@ function loop() {
   } else {
     snake.pop();
   }
-
-  // draw apple
+  
   ctx.fillStyle = 'red';
   ctx.fillRect(apple.x, apple.y, grid-1, grid-1);
 
-  // draw snake
   ctx.fillStyle = 'lime';
   snake.forEach((cell, index) => {
     ctx.fillRect(cell.x, cell.y, grid-1, grid-1);
